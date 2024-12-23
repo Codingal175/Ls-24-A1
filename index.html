@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Intro to HTML DOM-Document Object Model</title>
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                background-color: rgb(98, 207, 240);
+                margin: 0;
+                padding: 0;
+            }
+
+            h1 {
+                color: #333;
+                transition: all 0.5s ease;
+                /* Smooth transitions for style changes */
+            }
+
+            button {
+                background-color: #5be45f;
+                /* Green */
+                color: white;
+                padding: 15px 20px;
+                border: #4CAF50;
+                border-radius: 10px;
+                font-size: 15px;
+            }
+
+            button:hover {
+                background-color: palevioletred;
+                /* Slightly darker red on hover */
+                transform: scale(1.5);
+                /* Make the button Grow Suddenly */
+            }
+        </style>
+    </head>
+
+<body>
+    <center>
+    <h1 id="heading">Hello!!</h1>
+    <button onclick="changeText()">Click Me!</button>
+
+    <script>
+        function changeText() {
+            const heading = document.getElementById("heading");
+            heading.innerHTML = "You clicked the button!";
+            heading.style.color = "purple"; // Change heading color
+            heading.style.fontSize = "3on"; // Make the heading larger
+            heading.style.textShadow = "2px 2px 5px gray"; //Add a shadow effect
+            heading.style.backgroundColor = "antiquewhite"; //Change the background color
+        }
+    </script>
+    </center>
+</body>
+</html>

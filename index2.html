@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Intro to HTML DOM-Document Object Model</title>
+    </head>
+
+<body style="background-color: rgb(248, 248, 164);">
+    <center>
+    <h1 id="heading" style="background-color: rgb(184, 128, 212);color: beige;">Hello!!</h1>
+    <button onclick="changeText()" style="background-color: aqua;">Click Me!</button>
+
+    <script>
+        function changeText() {
+            document.getElementById("heading").innerHTML = "You clicked the button!";
+
+
+        }
+    </script>
+    </center>
+</body>
+</html>
